@@ -80,7 +80,7 @@ class Blog extends MY_Controller
                         . $archive['month'] . '</a></li>
 				';
             }
-            $html .= '</ul>';
+            $html .= '</ul>' ;
         } else {
             $html = '<div class="alert alert-info">' . lang('no_archives') . '</div>';
         }
