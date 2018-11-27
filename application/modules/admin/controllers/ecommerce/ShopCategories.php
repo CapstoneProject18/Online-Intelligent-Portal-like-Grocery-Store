@@ -1,8 +1,8 @@
 <?php
 
 /*
- * @Author:    Kiril Kirkov
- *  Gitgub:    https://github.com/kirilkirkov
+  @Author:    Kiril Kirkov
+   Gitgub:    https://github.com/kirilkirkov
  */
 if (!defined('BASEPATH')) {
     exit('No direct script access allowed');
@@ -20,8 +20,7 @@ class ShopCategories extends ADMIN_Controller
     }
 
     public function index($page = 0)
-    {
-        $this->login_check();
+    {   $this->login_check();
         $data = array();
         $head = array();
         $head['title'] = 'Administration - Home Categories';
@@ -59,7 +58,7 @@ class ShopCategories extends ADMIN_Controller
     }
 
     /*
-     * Called from ajax
+     Called from ajax
      */
 
     public function editShopCategorie()
@@ -70,7 +69,7 @@ class ShopCategories extends ADMIN_Controller
     }
 
     /*
-     * Called from ajax
+     Called from ajax
      */
 
     public function changePosition()
